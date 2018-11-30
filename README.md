@@ -3,6 +3,8 @@ My NaNoGenMo entry for 2018 is a 50,000-word stage play generated from the Engli
 
 Dialogue is generated such that each line tends to be similar to or otherwise follow on from the previous one. Stage directions and scenery are created to match the generated dialogue of each scene.
 
+Full text of first edition (50,581 words): https://kevan.org/nanogenmo/2018firstedition
+
 Sample output:
 
 >**ACT 1, SCENE 1**
