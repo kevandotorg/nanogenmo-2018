@@ -395,7 +395,7 @@ while ($wordCount<$wordTarget)
 		$leftToSpeak = array_diff($castOnStage, $castHaveSpoken);
 		if ((($lineCount>10 && rand(1,20)==1 && empty($leftToSpeak)) || sizeof($castOnStage)==1 || $lineCount>100) && !preg_match("/\?$/",$line))
 		{
-			print "<!--[SCENE OVER: lineCount=$lineCount, cast=".sizeof($castOnStage).", $wordCount words]-->";
+			//print "<!--[SCENE OVER: lineCount=$lineCount, cast=".sizeof($castOnStage).", $wordCount words]-->";
 			$lineCount=0;
 			$sceneIsOver = 1;
 		}
@@ -721,8 +721,6 @@ function fetchLine($feedline,$focus,$speaker,$actCount)
 	global $recentText;
 	//return "lorem ipsum dolor";
 	
-	$dump=rand(1,20);$dump=0;
-
 	if ($feedline == "") { return languageLine($speaker); } 
 
 	$bestline = "..."; $bestscore = 0;
@@ -817,8 +815,6 @@ function fetchLine($feedline,$focus,$speaker,$actCount)
 				//print "<!-- $recentText != $tryline -->";
 				$bestline = $tryline;
 				$bestscore = $bestsynscore;
-				if ($dump==3)
-				{ print "\n".str_pad($tryscore, 8, '0', STR_PAD_LEFT)." ($feedline) ($tryline)"; }
 			}
 			else
 			{
@@ -826,7 +822,6 @@ function fetchLine($feedline,$focus,$speaker,$actCount)
 			}
 		}
 	}
-	if ($dump==3) { exit; }
 	
 	//print "(used $bestline = ".stripos($recentText,$bestline)." after $feedline, score=$bestscore)\n";
 	
@@ -979,7 +974,7 @@ function sceneIntro($actCount,$sceneCount,$scenePlace = "", $mainCast = "", $sce
 		$lightAdjectives = array_merge($lightAdjectives,array("well-kept","sunny","secluded"));
 		if (preg_match("/(garden|forest|path|public park|road|field)$/",$scenePlace))
 		{
-			$darkAdjectives = array_merge($lightAdjectives,array("overgrown","untended"));
+			$darkAdjectives = array_merge($darkAdjectives,array("overgrown","untended"));
 			$lightAdjectives = array_merge($lightAdjectives,array("leafy","well-tended"));
 		}
 		$mainCast = preg_replace("/the clock/","a clock",$mainCast);
