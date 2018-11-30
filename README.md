@@ -7,7 +7,7 @@ Sample output:
 
 >**ACT 1, SCENE 1**
 >
->A cold railway carriage. It is raining outside. Jan is counting out money. Karen is leafing through a letter. Carla is sipping beer.
+>_A cold railway carriage. It is raining outside. Jan is counting out money. Karen is leafing through a letter. Carla is sipping beer._
 >
 >**JAN**:
 > _[persuasively]_ Is this the first time you have been at sea?
