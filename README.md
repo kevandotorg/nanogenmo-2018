@@ -1,5 +1,5 @@
 # Out of Nowhere
-My NaNoGenMo entry for 2018 is a 50,000-word stage play generated from late 19th and early 20th century European phrasebooks. Among a cast of seventeen, each character is assigned their own phrasebook and will only use verbatim sentences from it in their speech.
+My NaNoGenMo entry for 2018 is a 50,000-word stage play generated from the English example sentences given in late 19th and early 20th century European phrasebooks. Among a cast of seventeen, each character is assigned their own phrasebook and will only use verbatim sentences from it in their speech.
 
 Dialogue is generated such that each line tends to be similar to or otherwise follow on from the previous one. Stage directions and scenery are created to match the generated dialogue of each scene.
 
